@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:netflix_clone/ui/homescreen.dart';
+import 'package:netflix_clone/ui/news_and_hot.dart';
+import 'package:netflix_clone/ui/search_screen.dart';
 
 class BottomNavBar extends StatelessWidget {
   const BottomNavBar({super.key});
@@ -33,9 +36,9 @@ class BottomNavBar extends StatelessWidget {
         ),
         body: const TabBarView(
           children: [
-            // HomeScreen(),
-            // SearchScreen(),
-            // MoreScreen(),
+            HomeScreen(),
+            SearchScreen(),
+            MoreScreen(),
           ],
         ),
       ),
